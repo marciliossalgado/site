@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisetas Oversized - OffCut®</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="YouTube">📺</a>
+                <a href="#" aria-label="Pinterest">📌</a>
+                <a href="#" aria-label="TikTok">🎵</a>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="track-order">📦 Rastrear Pedido</a>
+                <a href="#" class="cart">🛒 Meu carrinho (0)</a>
+                <a href="#" class="login">👤 Entrar</a>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-text">OFFCUT T-SHIRT</span>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" placeholder="Faça uma pesquisa..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+
+                <div class="header-right">
+                    <span class="easy-exchange">🔄 Troca Fácil</span>
+                    <span class="register-cta">Cadastre-se para uma compra rápida!</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#">Kits Promocionais</a>
+                        <div class="dropdown-menu">
+                            <a href="#">2 Calça por R$75 cada</a>
+                            <a href="#">3 Calça por R$199,00</a>
+                            <a href="#">5 Camisetas por R$200</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">Lançamentos</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Calças</a>
+                        <div class="dropdown-menu">
+                            <a href="#">Calça De Alfaiataria</a>
+                            <a href="#">Calça Elast Fit</a>
+                            <a href="#">Calças Jogger</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a href="#">Camisetas</a>
+                        <div class="dropdown-menu">
+                            <a href="#">Oversized</a>
+                            <a href="#">Regular</a>
+                            <a href="#">Dry Fit</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Jaquetas e Casacos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Shorts e Bermudas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Outros</a>
+                    </li>
+                    <li class="nav-item sale">
+                        <a href="#">OFERTAS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="#">Home</a> / <a href="#">Camisetas</a> / <span>Camisetas Oversized</span>
+        </div>
+    </div>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h2>Promoção do Mês</h2>
+                <p>Todas <span class="highlight">Camisetas Oversized</span> por apenas <span class="price">R$70,00 cada!</span></p>
+                <p class="promo-subtitle">Promoção por tempo limitado!</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">22</span>
+                        <span class="countdown-label">h</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">48</span>
+                        <span class="countdown-label">m</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">57</span>
+                        <span class="countdown-label">s</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filtros Selecionados <span class="filter-count">0</span></h3>
+                        <button class="clear-filters">❌ Remover filtros</button>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="price-range-slider">
+                      <label>R$<span id="price-min-label">0</span></label>
+                      <input type="range" min="0" max="200" value="0" id="price-min-range">
+
+                      <label>R$<span id="price-max-label">200</span></label>
+                      <input type="range" min="0" max="200" value="200" id="price-max-range">
+                    </div>
+
+
+                    <!-- Size Filter -->
+                    <div class="filter-section">
+                        <h4>Tamanho 🔽</h4>
+                        <div class="size-options">
+                            <label><input type="checkbox" value="P"> P</label>
+                            <label><input type="checkbox" value="M"> M</label>
+                            <label><input type="checkbox" value="G"> G</label>
+                            <label><input type="checkbox" value="GG"> GG</label>
+                            <label><input type="checkbox" value="G1"> G1</label>
+                            <label><input type="checkbox" value="G2"> G2</label>
+                            <label><input type="checkbox" value="G3"> G3</label>
+                            <label><input type="checkbox" value="G4"> G4</label>
+                        </div>
+                    </div>
+
+                    <!-- Color Filter -->
+                    <div class="filter-section">
+                        <h4>Cor 🔽</h4>
+                        <div class="color-options">
+                            <label><input type="checkbox" value="branco"> Branco</label>
+                            <label><input type="checkbox" value="preto"> Preto</label>
+                            <label><input type="checkbox" value="verde"> Verde</label>
+                            <label><input type="checkbox" value="marrom"> Marrom</label>
+                            <label><input type="checkbox" value="azul"> Azul</label>
+                            <label><input type="checkbox" value="bege"> Bege</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Section -->
+                <section class="products-section">
+                    <div class="section-header">
+                        <h1>CAMISETAS OVERSIZED</h1>
+                        <div class="results-info">
+                            <span>113 produtos encontrados para essa busca</span>
+                            <select class="sort-select">
+                                <option>Mais Vendidos</option>
+                                <option>Menor Preço</option>
+                                <option>Maior Preço</option>
+                                <option>Mais Recentes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products will be generated by JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">▶</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="container">
+                <div class="footer-features">
+                    <div class="feature">
+                        <span class="icon">🕒</span>
+                        <div>
+                            <strong>ATENDIMENTO</strong>
+                            <p>Segunda a Sexta - 8:00 às 17:00</p>
+                            <p>Sabado - 8:00 às 12:00</p>
+                            <p>Domingo - Fechado</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">🔄</span>
+                        <div>
+                            <strong>TROCAS E DEVOLUÇÕES</strong>
+                            <p>Até 7 dias para devolver e compra</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">🚚</span>
+                        <div>
+                            <strong>FRETE</strong>
+                            <p>Frete Grátis acima de R$300</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">💳</span>
+                        <div>
+                            <strong>PARCELAMENTO</strong>
+                            <p>Em até 12x no cartão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>CONTATO</h4>
+                        <p>📞 (00) 00000-0000</p>
+                        <p>✉️ email.com</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>INSTITUCIONAL</h4>
+                        <ul>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Compra Segura</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>SELOS DE SEGURANÇA</h4>
+                        <div class="security-seals">
+                            <img src="https://ext.same-assets.com/2447857738/407789471.svg" alt="Google">
+                            <img src="https://ext.same-assets.com/2447857738/2186812769.svg" alt="SSL">
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>FORMAS DE PAGAMENTO</h4>
+                        <div class="payment-methods">
+                            <img src="https://ext.same-assets.com/2447857738/2175989361.svg" alt="Visa">
+                            <img src="https://ext.same-assets.com/2447857738/3372162644.svg" alt="Mastercard">
+                            <img src="https://ext.same-assets.com/2447857738/680089658.svg" alt="PIX">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-app">
+                    <h4>Baixe nosso App</h4>
+                    <div class="app-stores">
+                        <img src="https://ext.same-assets.com/2447857738/1927908055.png" alt="App Store">
+                        <img src="https://ext.same-assets.com/2447857738/3220022336.png" alt="Google Play">
+                    </div>
+                </div>
+
+                <p class="copyright">
+                    Off Cut - T-Shit| CNPJ: 00.000.000/0000-00, Rua nome da rua, 00 - bairro - Fortaleza/Ce 00000-000
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
